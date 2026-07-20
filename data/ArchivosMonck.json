@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "titulo": "The Legend of Aetheria",
+    "imagenUrl": "https://picsum.photos/seed/aetheria/400/300",
+    "genero": "RPG",
+    "calificacion": 4.8,
+    "descripcion": "Un vasto mundo de fantasía donde exploras reinos olvidados, forjas alianzas y enfrentas criaturas legendarias en busca de un artefacto perdido."
+  },
+  {
+    "id": 2,
+    "titulo": "Neon Drift",
+    "imagenUrl": "https://picsum.photos/seed/neondrift/400/300",
+    "genero": "Carreras",
+    "calificacion": 4.3,
+    "descripcion": "Carreras futuristas a alta velocidad por ciudades iluminadas de neón, con autos personalizables y circuitos llenos de atajos secretos."
+  },
+  {
+    "id": 3,
+    "titulo": "Shadow Protocol",
+    "imagenUrl": "https://picsum.photos/seed/shadowprotocol/400/300",
+    "genero": "Sigilo/Acción",
+    "calificacion": 4.6,
+    "descripcion": "Infíltrate en instalaciones de alta seguridad como agente encubierto, usando el sigilo y la estrategia para completar misiones sin ser detectado."
+  },
+  {
+    "id": 4,
+    "titulo": "Harvest Valley",
+    "imagenUrl": "https://picsum.photos/seed/harvestvalley/400/300",
+    "genero": "Simulación",
+    "calificacion": 4.5,
+    "descripcion": "Construye y administra tu propia granja, cultiva cosechas, cría animales y entabla amistad con los habitantes de un pintoresco pueblo."
+  },
+  {
+    "id": 5,
+    "titulo": "Void Runners",
+    "imagenUrl": "https://picsum.photos/seed/voidrunners/400/300",
+    "genero": "Ciencia Ficción/Acción",
+    "calificacion": 4.2,
+    "descripcion": "Pilotea tu nave a través de galaxias hostiles, comercia con facciones espaciales y sobrevive a encuentros con piratas interestelares."
+  },
+  {
+    "id": 6,
+    "titulo": "Puzzle Dimensions",
+    "imagenUrl": "https://picsum.photos/seed/puzzledimensions/400/300",
+    "genero": "Puzzle",
+    "calificacion": 4.4,
+    "descripcion": "Resuelve acertijos que desafían la lógica y la percepción manipulando el espacio y el tiempo en niveles cada vez más complejos."
+  },
+  {
+    "id": 7,
+    "titulo": "Iron Vanguard",
+    "imagenUrl": "https://picsum.photos/seed/ironvanguard/400/300",
+    "genero": "Estrategia",
+    "calificacion": 4.7,
+    "descripcion": "Comanda ejércitos mecanizados en batallas tácticas por turnos, gestionando recursos y desarrollando tecnología militar avanzada."
+  },
+  {
+    "id": 8,
+    "titulo": "Whispering Woods",
+    "imagenUrl": "https://picsum.photos/seed/whisperingwoods/400/300",
+    "genero": "Terror/Aventura",
+    "calificacion": 4.1,
+    "descripcion": "Explora un bosque encantado plagado de secretos oscuros mientras descubres la verdad detrás de una serie de desapariciones misteriosas."
+  }
+]

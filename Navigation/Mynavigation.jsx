@@ -1,0 +1,28 @@
+import { createStackNavigator } from "@react-navigation/stack";
+import InicioScreens from "../Screens/InicioScreens";
+import CatalogoScreens from "../Screens/CatalogoScreens";
+import DetallesJuegosScreens from "../Screens/DetallesJuegosScreens";
+import FavoritoScreens from "../Screens/FavoritoScreens";
+import PerfilScreens from "../Screens/PerfilScreens";
+import { NavigationContainer } from "@react-navigation/native";
+
+const Mystack =  createStackNavigator ()
+function MystackN () {
+    return (
+            <Mystack.Navigator>
+                <Mystack.Screen  name = "INICIO"  component = {InicioScreens}/>
+                <Mystack.Screen  name = "CATALOGO"  component = {CatalogoScreens}/>
+                <Mystack.Screen  name = "DETALLES_JUEGOS"  component = {DetallesJuegosScreens}/>
+                <Mystack.Screen  name = "FAVORITOS"  component = {FavoritoScreens}/>
+                <Mystack.Screen  name = "PERFIL"  component = {PerfilScreens}/>
+            </Mystack.Navigator>
+    );
+    
+}
+export function MystackF () {
+    return (
+        <NavigationContainer>
+            <MystackN/>
+        </NavigationContainer>
+    )
+}
