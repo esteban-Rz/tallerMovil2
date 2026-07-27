@@ -1,18 +1,23 @@
 import React from 'react'
 import { Button, View,Text,StyleSheet } from 'react-native';
 import BackWalcraft from '../Components/BackWalcraft';
+import app from '../src/config/firebaseConfig';
+
+
 const InicioScreens = ({navigation} ) => {
   return (
        <BackWalcraft>
       <Text>Bienvenido 🚀</Text>
-      <Button 
-        title="Ir a Catalogos" 
-        onPress={() => navigation.navigate('CATALOGO')} 
+      
+       <Button 
+        title="Iniciar" 
+        onPress={() =>  navigation.navigate('LOGING')} 
       />
        <Button 
-        title="Ir a perfil" 
-        onPress={() => navigation.navigate('PERFIL')} 
+        title="Registrarte" 
+        onPress={() =>  navigation.navigate('REGISTRO')} 
       />
+
     </BackWalcraft>
   )
 }
