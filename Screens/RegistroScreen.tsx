@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { auth, db } from '../src/config/firebaseConfig';
-import { View } from 'react-native';
+import { ImageBackground, View } from 'react-native';
 import { Button, Snackbar, Text, TextInput } from 'react-native-paper';
 import { styles } from '../src/config/theme/Styles';
 //iterface formulario 
@@ -27,6 +27,8 @@ const RegistroScreen = () => {
     nick: "",
     edad: ""
   });
+    const [foto, setFoto] = useState<string | null>(null); // guarda la URI local de la imagen
+    const [subiendo, setSubiendo] = useState(false); // loading mientras sube
   // funcion de valores del formulario
   const handleSetValue= async (key:string, value: string) =>{
     setformRegister({...formRegister,[key]:value});
@@ -39,6 +41,8 @@ const RegistroScreen = () => {
    });
    // hock  de error 
    const [errorMsg, setErrorMsg] = useState('');
+
+   
 
    const handleRegistroUser = async () => {
   if (!formRegister.email || !formRegister.password || !formRegister.nick || !formRegister.edad) {
@@ -91,6 +95,8 @@ const RegistroScreen = () => {
 
   return (
     <View style={styles.root}>
+      <ImageBackground source={require("../assets/detallesback.jpg")}
+                        style={styles.container}>
       <Text variant="displayMedium"> REGISTRATE</Text>
       
       <TextInput
@@ -146,7 +152,7 @@ const RegistroScreen = () => {
           
         <Text> {errorMsg}</Text> 
       </Snackbar>
-      
+      </ImageBackground>
     </View>
                                                                                       
   )

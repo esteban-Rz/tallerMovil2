@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View } from 'react-native';
+import { ImageBackground, View } from 'react-native';
 import { Button, Snackbar, Text, TextInput } from 'react-native-paper';
 import { styles } from '../src/config/theme/Styles';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -64,7 +64,10 @@ const InicioSesionScreen = () => {
   }
 
   return (
+    
     <View style={styles.root}>
+      <ImageBackground source={require("../assets/favoritoback.jpg")}
+                      style={styles.container}>
       <Text variant="displayMedium"> INICIA SESIÓN</Text>
       <TextInput
         label="Email"
@@ -104,6 +107,7 @@ const InicioSesionScreen = () => {
        onPress={() => navigation.navigate("REGISTRO" as never) }>
     registrate
   </Button>
+  </ImageBackground>
     </View>
   )
 }

@@ -14,6 +14,13 @@ export const styles = StyleSheet.create ({
         },
         botong:{
             width:"90%"
-        }
+        },
+        container: {
+        flex:1,
+        flexDirection: "column",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+        
+    }
         
 })

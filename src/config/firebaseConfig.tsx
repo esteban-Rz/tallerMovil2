@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 // ❌ Quitamos getAnalytics — no es compatible con React Native / Expo
 
 // Your web app's Firebase configuration
@@ -27,3 +28,5 @@ export const auth = initializeAuth(app, {
 // exporto la app
 export default app;
 export const db = getFirestore(app);
+// imagenes 
+export const storage = getStorage(app);
