@@ -21,6 +21,14 @@ export const styles = StyleSheet.create ({
         justifyContent: "space-evenly",
         alignItems: "center",
         
+    },
+     containerinicio: {
+        flex:1,
+        flexDirection: "column",
+        justifyContent: "center",
+        gap:10 ,  
+        alignItems: "center",
+        
     }
         
 })
